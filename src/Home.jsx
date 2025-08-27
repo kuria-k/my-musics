@@ -17,10 +17,10 @@ function Home(){
         <p className='ml-20'>Get to journal your favourite jams all at</p>
     </div>
     <div className='w-160 ml-210 -mt-50 '>
-       <img src="src\assets\images\Music.jpg" alt="" className='rounded-full' />
+       <img src="src\assets\images\Music.jpg" alt="" className='rounded-2xl' />
     </div>
     <div className='-mt-20 ml-10'>
-        <button onClick={handleSubmit} className='text-gray-900 bg-gray-100'>GET STARTED</button>
+        <button onClick={handleSubmit} className='text-gray-100 bg-gray-100'>GET STARTED</button>
     </div>
     </div>
     

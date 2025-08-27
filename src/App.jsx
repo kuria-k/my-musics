@@ -13,7 +13,6 @@ function App() {
         <Route path="/" element={<Home setEntries={setEntries} />} />
         <Route path="/inputs" element={<Inputs entries={entries} setEntries={setEntries} />} />
         <Route path="/data" element={<Data entries={entries} />} />
-        <Route path="/data" element={<Data setEntries={setEntries} /> } />
       </Routes>
     </Router>
   );

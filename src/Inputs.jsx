@@ -13,6 +13,10 @@ function Inputs({ setEntries }) {
     setEntries((prev) => [...prev, {name,music, artist, genre }]);
     navigate("/data");
   };
+  const handleInput = (e) => {
+    e.preventDefault();
+    navigate(-1);
+  };
 
   return (
     <>
@@ -20,14 +24,17 @@ function Inputs({ setEntries }) {
         action=""
         className="bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 text-gray-100 w-380 h-180 text-center"
         onSubmit={handleSubmit}
-      >
+      > <br />
+        <button onClick={handleInput} className="text-gray-100 -ml-330">
+        Back
+      </button>
         {" "}
         <br />
         <br />
         <br /> <br />
         <div className="flex items-center justify-center mb-4">
           <div className="music-note text-6xl mr-4">🎵</div>
-          <h1 className="text-4xl font-bold text-white">Daily Music Tracker</h1>
+          <h1 className="text-4xl font-bold text-white">Daily Music Recap</h1>
           <div className="music-note text-6xl ml-4">🎶</div>
         </div>{" "}
         <br />
@@ -78,6 +85,18 @@ function Inputs({ setEntries }) {
           <option value="Hip-Hop" className="text-gray-900">
             Hip-Hop
           </option>
+          <option value="Rnb" className="text-gray-900">
+            Rnb
+          </option>
+          <option value="Afrobeat" className="text-gray-900">
+            Afrobeats
+          </option>
+          <option value="Bongo" className="text-gray-900">
+            Bongo
+          </option>
+          <option value="Country" className="text-gray-900">
+            Country
+          </option>
           <option value="Classical" className="text-gray-900">
             Classical
           </option>
@@ -85,9 +104,9 @@ function Inputs({ setEntries }) {
         <br />
         <br />
         <br /> <br />
-        <button className="bg-gray-100 text-stone-800">
+        <button className="text-gray-100">
           {" "}
-          <span className="text-gray-900">+</span> Add music
+          <span className="text-gray-100">+</span> Add music
         </button>
       </form>
     </>
