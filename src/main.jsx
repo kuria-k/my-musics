@@ -5,6 +5,7 @@ import App from './App.jsx'
 import Inputs from './Inputs.jsx'
 import Home from './Home.jsx'
 import Data from './Data.jsx'
+import Counter from './Counter.jsx'
 
 
 createRoot(document.getElementById('root')).render(
@@ -13,6 +14,7 @@ createRoot(document.getElementById('root')).render(
     {/* <Inputs />  */}
     {/* <Home/> */}
     {/* <Data/> */}
+    {/* <Counter/> */}
 
   </StrictMode>,
 )
