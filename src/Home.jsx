@@ -21,7 +21,7 @@ function Home(){
        <img src={musicImage} alt="" className='rounded-2xl' />
     </div>
     <div className='-mt-20 ml-10'>
-        <button onClick={handleSubmit} className='text-gray-100 bg-gray-100'>GET STARTED</button>
+        <button onClick={handleSubmit}>GET STARTED</button>
     </div>
     </div>
     
